@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="vidangepane" prefHeight="659.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.vidangecontrole">
+   <children>
+      <BarChart fx:id="vidangeBar" layoutX="57.0" layoutY="14.0" prefHeight="400.0" prefWidth="547.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Km" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label fx:id="carneedV" layoutX="128.0" layoutY="522.0" prefHeight="115.0" prefWidth="339.0" text="Aucune " textFill="#e10c0c">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <JFXButton fx:id="btmisajour" layoutX="492.0" layoutY="427.0" onAction="#misajour" prefHeight="41.0" prefWidth="95.0" style="-fx-background-color: blue;" text="mis_ajour" />
+      <Label layoutX="128.0" layoutY="427.0" prefHeight="41.0" prefWidth="339.0" style="-fx-background-color: green;" text="les voitures besoins de vidange" textAlignment="CENTER" textFill="#e8e1e1" AnchorPane.leftAnchor="128.0">
+         <padding>
+            <Insets left="60.0" />
+         </padding>
+      </Label>
+      <BarChart fx:id="assuranceBar" layoutX="642.0" layoutY="14.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="675.0" layoutY="421.0" prefHeight="41.0" prefWidth="339.0" style="-fx-background-color: green;" text="les voitures  besoins d'assurance cette mois" textAlignment="CENTER" textFill="#e8e1e1">
+         <padding>
+            <Insets left="60.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="btmisajour2" layoutX="1040.0" layoutY="421.0" prefHeight="41.0" prefWidth="95.0" style="-fx-background-color: blue;" text="mis_ajour" />
+      <Label fx:id="carneedV2" layoutX="707.0" layoutY="474.0" prefHeight="163.0" prefWidth="339.0" text="Aucune " textFill="#f53434">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

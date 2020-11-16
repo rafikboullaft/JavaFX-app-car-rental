@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="600.0" style="-fx-background-color: #603F83FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.hommeControle">
+   <children>
+      <Button fx:id="ajouterV" layoutX="231.0" layoutY="341.0" mnemonicParsing="false" onAction="#enregistrerReservetion" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #C7D3D4FF;" text="Reserver" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="25.0" layoutY="149.0" prefHeight="30.0" prefWidth="75.0" text="Date de sortie" textFill="#f2ecec" />
+      <Label layoutX="25.0" layoutY="93.0" prefHeight="30.0" prefWidth="84.0" text="Nom du client" textFill="#f2ecec" />
+      <Label layoutX="285.0" layoutY="93.0" prefHeight="30.0" prefWidth="102.0" text="Prenom du client" textFill="#f2ecec" />
+      <Label layoutX="285.0" layoutY="149.0" prefHeight="30.0" prefWidth="102.0" text="Date de retour" textFill="#f2ecec" />
+      <Label layoutX="25.0" layoutY="206.0" prefHeight="30.0" prefWidth="75.0" text="Telephone" textFill="#f2ecec" />
+      <Label layoutX="275.0" layoutY="206.0" prefHeight="30.0" prefWidth="75.0" text="   Cin" textFill="#f2ecec" />
+      <Label contentDisplay="CENTER" layoutX="124.0" layoutY="23.0" prefHeight="39.0" prefWidth="353.0" style="-fx-background-color: rgb(239,166,49); -fx-background-radius: 20;" text="  RESERVER UNE VOITURE" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="annulerV" layoutX="375.0" layoutY="341.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #C7D3D4FF;" text="Annuler" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="124.0" fitWidth="164.0" layoutX="25.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="prenom_client" alignment="TOP_CENTER" layoutX="407.0" layoutY="93.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cin" alignment="TOP_CENTER" layoutX="407.0" layoutY="206.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nom_client" alignment="TOP_CENTER" layoutX="107.0" layoutY="93.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="telephone" alignment="TOP_CENTER" layoutX="109.0" layoutY="206.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nombre_jours" alignment="TOP_CENTER" layoutX="407.0" layoutY="262.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="284.0" layoutY="262.0" prefHeight="30.0" prefWidth="102.0" text="Nombre de jours" textFill="#f2ecec" />
+      <DatePicker fx:id="date_sortie" layoutX="109.0" layoutY="152.0" prefHeight="25.0" prefWidth="134.0" />
+      <DatePicker fx:id="date_retour" layoutX="407.0" layoutY="152.0" prefHeight="25.0" prefWidth="134.0" />
+   </children>
+</Pane>

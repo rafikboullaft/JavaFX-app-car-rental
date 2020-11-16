@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.singupControle">
+   <children>
+      <TextField fx:id="nomsingup" layoutX="151.0" layoutY="75.0" prefHeight="35.0" prefWidth="270.0" promptText="entrer votre Nom" style="-fx-background-color: #151928;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="enregestrerbt" layoutX="147.0" layoutY="213.0" mnemonicParsing="false" onAction="#singupAction" prefHeight="41.0" prefWidth="278.0" style="-fx-background-color: #1296f3;" text="enregestrer">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="seconnecterbt" layoutX="454.0" layoutY="24.0" mnemonicParsing="false" onAction="#seconnecter" prefHeight="35.0" prefWidth="121.0" style="-fx-background-color: #1296f3;" text="se connecter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordsingup" layoutX="151.0" layoutY="140.0" prefHeight="35.0" prefWidth="270.0" promptText="le  mot de pass" style="-fx-background-color: #151928;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+   </children>
+</Pane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.vscontrollere">
+   <children>
+      <TableView fx:id="tableVS" layoutX="150.0" layoutY="92.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colVoiture" prefWidth="121.0" text="voiture" />
+          <TableColumn fx:id="colNom" prefWidth="123.0" text="nom" />
+            <TableColumn fx:id="colDated" prefWidth="186.0" text="datedebut" />
+            <TableColumn fx:id="colPermis" prefWidth="166.0" text="permis" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

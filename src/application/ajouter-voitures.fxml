@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="600.0" style="-fx-background-color: #603F83FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ajouterVoitureController">
+   <children>
+      <Button fx:id="ajouterV" layoutX="313.0" layoutY="350.0" mnemonicParsing="false" onAction="#ajouterVoitureDB" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #C7D3D4FF;" text="Ajouter" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="25.0" layoutY="149.0" prefHeight="30.0" prefWidth="75.0" text="Kilometrage" textFill="#f2ecec" />
+      <Label layoutX="25.0" layoutY="93.0" prefHeight="30.0" prefWidth="60.0" text="Marque" textFill="#f2ecec" />
+      <Label layoutX="324.0" layoutY="87.0" prefHeight="30.0" prefWidth="60.0" text="Modele" textFill="#f2ecec" />
+      <Label layoutX="327.0" layoutY="149.0" prefHeight="30.0" prefWidth="60.0" text="Carburant" textFill="#f2ecec" />
+      <Label layoutX="25.0" layoutY="206.0" prefHeight="30.0" prefWidth="75.0" text="Prix/J" textFill="#f2ecec" />
+      <Label layoutX="320.0" layoutY="206.0" prefHeight="30.0" prefWidth="75.0" text="   Visite" textFill="#f2ecec" />
+      <Label layoutX="132.0" layoutY="24.0" prefHeight="39.0" prefWidth="336.0" style="-fx-background-color: rgb(239,166,49); -fx-background-radius: 20;" text="  AJOUTER UNE VOITURE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="annulerV" layoutX="443.0" layoutY="350.0" mnemonicParsing="false" onAction="#annuler" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #C7D3D4FF;" text="Annuler" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="imageV" layoutX="9.0" layoutY="277.0" mnemonicParsing="false" onAction="#choisirimage" prefHeight="30.0" prefWidth="108.0" style="-fx-background-color: #C7D3D4FF;" text="Image" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="1.0" radius="0.11627906976744184">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="124.0" fitWidth="164.0" layoutX="127.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="modeleV" alignment="TOP_CENTER" layoutX="407.0" layoutY="93.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="marqueV" alignment="TOP_CENTER" layoutX="109.0" layoutY="93.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="kilometrageV" alignment="TOP_CENTER" layoutX="109.0" layoutY="149.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="prixV" alignment="TOP_CENTER" layoutX="109.0" layoutY="206.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="carburantV" alignment="TOP_CENTER" layoutX="407.0" layoutY="149.0" prefHeight="30.0" prefWidth="134.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="visiteV" layoutX="408.0" layoutY="209.0" prefHeight="25.0" prefWidth="134.0" />
+   </children>
+</Pane>

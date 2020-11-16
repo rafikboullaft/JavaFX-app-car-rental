@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home3" maxHeight="659.0" maxWidth="1174.0" minHeight="659.0" minWidth="1174.0" prefHeight="659.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.hommeControle">
+   <children>
+      <BorderPane prefHeight="659.0" prefWidth="1174.0">
+         <top>
+            <AnchorPane prefHeight="42.0" prefWidth="1174.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane alignment="CENTER" maxHeight="20000.0" maxWidth="20000.0" minHeight="10.0" minWidth="10.0" prefHeight="83.0" prefWidth="1174.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <JFXButton prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: rgb(239,166,49); -fx-background-radius: 20;" text="  Imprimer contrat" GridPane.columnIndex="1">
+                           <padding>
+                              <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+                           </padding>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="40.0" right="4.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/printer.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#resrverVoiture" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: rgb(239,166,49); -fx-background-radius: 20;" text="  Reserver une voiture" GridPane.columnIndex="2">
+                           <padding>
+                              <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+                           </padding>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="40.0" right="4.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/contract.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#supprimerVoiture" prefHeight="60.0" prefWidth="325.0" style="-fx-background-color: rgb(239,166,49); -fx-background-radius: 20;" text="  Supprimer une reservation">
+                           <padding>
+                              <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+                           </padding>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="40.0" right="4.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/removex.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane maxHeight="617.0" maxWidth="1174.0" minHeight="617.0" minWidth="1174.0" prefHeight="617.0" prefWidth="1174.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="tableau2" maxHeight="617.0" maxWidth="1174.0" minHeight="566.0" minWidth="1174.0" prefHeight="617.0" prefWidth="1174.0" stylesheets="@../../images/table.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <FlowPane layoutX="368.0" layoutY="152.0">
+                           <children>
+                              <JFXButton onAction="#creatPage3" prefHeight="120.0" prefWidth="480.0" style="-fx-background-color: #ffff00;" text="Afficher tableau de reservation">
+                                 <padding>
+                                    <Insets bottom="2.0" left="10.0" right="10.0" top="2.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </FlowPane>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
